@@ -15,18 +15,30 @@
 <body>
   <div class="container">
     <div class="card">
-
+      
       <div class="numDisplay">
         <p>advice &num;<span id="number"></span></p>
       </div>
-      <section class="quoteCtnr" id="quoteCtnr">
-        <p>&ldquo;<span id="advice"></span>&rdquo;</p>
+
+      <section class="quoteCtnr">
+        <p>&ldquo;
+          
+          <span class="spinDice dice" id="spin">
+            <img src="./images/icon-dice.svg" alt="dice">
+          </span>
+          
+          <span class="advice" id="advice">
+          </span>
+
+        &rdquo;</p>
       </section>
+
       <picture>
         <source media="(min-width: 650px)" srcset="./images/pattern-divider-desktop.svg">
         <img srcset="./images/pattern-divider-mobile.svg" alt="dividers">
       </picture>
-      <div class="dice" id="getAdvice">
+      
+      <div class="getDice dice" id="getAdvice">
         <img src="./images/icon-dice.svg" alt="dice">
       </div>
     </div>

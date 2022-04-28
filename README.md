@@ -9,10 +9,10 @@ This my a solution to the [Advice generator app challenge on Frontend Mentor](ht
 ### Links
 
 - Solution URL: [comming soon]()
-- Live Site URL: [comming soon]()
+- Live Site URL: [Advice Generator App](https://fem-advice-generator-app-seven.vercel.app/)
 
 ## Build Notes
-
+- Added a loading spinner for slower networks.
 - I wanted to use the `srcset` attribute, so I learned about and used the `<picture>` tag.  It's applied to the divider image.
 - Played around with `inset` and `calc()` when positioning the dice button.
 - I used Async/Await
@@ -48,4 +48,4 @@ Using `inset` instead of `top bottom left right` and `calc()`.
 ## Author
 - My Website - [James Bretz (Auddity)](https://auddity.netlify.app/)
 - Frontend Mentor Profile - [Auddity](https://www.frontendmentor.io/profile/Auddity)
-- Sometimes I post notes on Medium [Auddity](https://medium.com/@jay.auddity)
+- Sometimes I post notes on Medium - [Auddity](https://medium.com/@jay.auddity)

@@ -6,6 +6,7 @@ const get = selector => {
 const url = 'https://api.adviceslip.com/advice';
 
 const getAdvice = async () => {
+  get('spin').style.display = 'inline-block';
   let res = await fetch(url);
   let data = await res.json(); 
   try {
@@ -16,6 +17,7 @@ const getAdvice = async () => {
 }
 
 const displayAdvice = data => {
+  get('spin').style.display = 'none';
   get('number').textContent = `${data.slip.id}`;
   get('advice').innerText = `${data.slip.advice}`;
 }
@@ -23,3 +25,5 @@ const displayAdvice = data => {
 get('getAdvice').addEventListener('click', () => {
   getAdvice();
 });
+
+window.addEventListener('DOMContentLoaded', getAdvice);
