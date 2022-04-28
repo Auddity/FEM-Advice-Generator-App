@@ -17,7 +17,16 @@
 
     <form class="form" id="form">
       <div class="form-control">
-        <input type="text" placeholder="Search for Advice">
+        <label 
+          for="input" 
+          class="a11y">
+            Search for advice
+        </label>
+        <input 
+          id="input" 
+          type="text" 
+          placeholder="Search for Advice"
+          autofocus>
         <button type="submit">Get Advice</button>
       </div>
     </form>
@@ -46,7 +55,7 @@
         <img srcset="./images/pattern-divider-mobile.svg" alt="dividers">
       </picture>
 
-      <div class="getDice dice" id="getAdvice">
+      <div class="getDice dice" id="getAdvice" tabindex="0">
         <img src="./images/icon-dice.svg" alt="dice">
       </div>
     </div>

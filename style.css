@@ -5,6 +5,8 @@
   --grayishBlue: hsl(217, 19%, 38%);
   --darkGrayishBlue: hsl(217, 19%, 24%);
   --darkBlue: hsl(218, 23%, 16%);
+  --boxShadow: 0 0 1.5rem var(--neonGreen);
+  --subtleShadow: 0 0 .5rem var(--neonGreen);
   /* Font */
   --standardFontSize: 1.6rem;
   --quoteFontSize: 2.8rem;
@@ -41,7 +43,6 @@ body {
 
 /* Search Form */
 .form {
-  /* flex-shrink: 1; */
   width: min(90vmin, 60rem);
 }
 
@@ -50,9 +51,7 @@ body {
   display: flex;
   background-color: var(--darkGrayishBlue);
   font-weight: 700;
-  padding: 1.3rem;
   border-radius: 1.3rem;
-  /* overflow: hidden; */
 }
 
 .form-control > * {
@@ -67,12 +66,15 @@ body {
 }
 
 .form-control input {
+  display: block;
   width: 100%;
   height: 100%;
   background: transparent;
   font-size: var(--standardFontSize);
   color: var(--lightCyan);
   padding-inline-start: 2rem;
+  padding-block: 1.3rem;
+  border-radius: 1.5rem;
 }
 
 .form-control button {
@@ -138,9 +140,22 @@ picture img {
   cursor: pointer;
 }
 
-/* Hover States */
-.getDice:hover, button:hover {
-  box-shadow: 0 0 1.5rem var(--neonGreen);
+/* Hover & Focus States */
+.form-control > *:focus {
+  outline: none;
+}
+.form-control input:focus {
+  box-shadow: var(--subtleShadow);
+}
+
+.getDice:hover, .getDice:focus, button:hover, button:focus {
+  box-shadow: var(--boxShadow);
+}
+
+/* a11y */
+.a11y {
+  position: absolute;
+  left: -10000px;
 }
 
 /* Loading Animation */
