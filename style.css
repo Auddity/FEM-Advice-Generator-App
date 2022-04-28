@@ -35,10 +35,59 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
 }
 
+/* Search Form */
+.form {
+  /* flex-shrink: 1; */
+  width: min(90vmin, 60rem);
+}
+
+.form-control {
+  position: relative;
+  display: flex;
+  background-color: var(--darkGrayishBlue);
+  font-weight: 700;
+  padding: 1.3rem;
+  border-radius: 1.3rem;
+  /* overflow: hidden; */
+}
+
+.form-control > * {
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: .2rem;
+}
+
+.form-control > *:focus {
+  outline: none;
+}
+
+.form-control input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  font-size: var(--standardFontSize);
+  color: var(--lightCyan);
+  padding-inline-start: 2rem;
+}
+
+.form-control button {
+  position: absolute;
+  background-color: var(--neonGreen);
+  right: 0;
+  top: 0;
+  color: hsl(218, 23%, 16%);
+  padding: 1.5rem;
+  border-start-end-radius: 1.5rem;
+  border-end-end-radius: 1.5rem;
+  cursor: pointer;
+}
+
+/* Answer Card */
 .card {
   position: relative;
   background-color: var(--darkGrayishBlue);
@@ -56,6 +105,15 @@ body {
   margin-block: 2.1rem;
 }
 
+.quoteCtnr {
+  position: relative;
+}
+
+picture img {
+  margin-block: 3rem;
+}
+
+/* Dice Components */
 .dice {
   background-color: var(--neonGreen);
   border-radius: 50%;
@@ -67,10 +125,6 @@ body {
   transform: translateY(calc(50% - .25rem));
 }
 
-.quoteCtnr {
-  position: relative;
-}
-
 .spinDice {
   position: absolute;
   inset: calc(50% - 2.7rem) calc(50% - 2.6rem);
@@ -78,14 +132,15 @@ body {
   animation: spin .6s ease-in-out infinite normal;
 }
 
-picture img {
-  margin-block: 3rem;
-}
-
 .getDice {
   position: absolute;
   inset: calc(100% - 2.7rem) calc(50% - 2.6rem);
   cursor: pointer;
+}
+
+/* Hover States */
+.getDice:hover, button:hover {
+  box-shadow: 0 0 1.5rem var(--neonGreen);
 }
 
 /* Loading Animation */

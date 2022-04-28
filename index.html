@@ -13,7 +13,15 @@
   <title>Frontend Mentor | Advice generator app</title>
 </head>
 <body>
-  <div class="container">
+  <main class="container">
+
+    <form class="form" id="form">
+      <div class="form-control">
+        <input type="text" placeholder="Search for Advice">
+        <button type="submit">Get Advice</button>
+      </div>
+    </form>
+
     <div class="card">
       
       <div class="numDisplay">
@@ -37,12 +45,12 @@
         <source media="(min-width: 650px)" srcset="./images/pattern-divider-desktop.svg">
         <img srcset="./images/pattern-divider-mobile.svg" alt="dividers">
       </picture>
-      
+
       <div class="getDice dice" id="getAdvice">
         <img src="./images/icon-dice.svg" alt="dice">
       </div>
     </div>
-  </div>
+  </main>
   
   <script src="script.js"></script>
 </body>
