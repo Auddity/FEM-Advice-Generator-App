@@ -45,8 +45,8 @@ const displaySearch = async () => {
   const data = await searchAdvice();
   get('spin').style.display = 'none';
   console.log(data);
-  const index = randomEl(data.slips.length);
   if (data.slips) {
+    const index = randomEl(data.slips.length);
     get('number').textContent = `# ${data.slips[index].id}`
     get('advice').innerText = `${data.slips[index].advice}`
   } else {
@@ -61,7 +61,7 @@ const randomEl = arrLength => {
 
 get('form').addEventListener('submit', e => {
   e.preventDefault();
-  displaySearch();
+  get('input').value ? displaySearch() : alert('Please enter a keyword')
   get('input').value = '';
 })
 
