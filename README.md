@@ -12,11 +12,13 @@ This my a solution to the [Advice generator app challenge on Frontend Mentor](ht
 - Live Site URL: [Advice Generator App](https://fem-advice-generator-app-seven.vercel.app/)
 
 ## Build Notes
-- Added a loading spinner for slower networks.
 - I wanted to use the `srcset` attribute, so I learned about and used the `<picture>` tag.  It's applied to the divider image.
 - Played around with `inset` and `calc()` when positioning the dice button.
 - I used Async/Await
-- The API offers a search object, I'll apply that soon.
+
+## Extras I Added
+- API offers a search object. So I added a search form which returns the first piece of advice in the returned data. (will switch it random next).
+- I Also added a loading animation of the dice element when awaiting data with slower network speeds.
 
 ### Something I Learned
 
