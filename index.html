@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <!-- Styling -->
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+
+      <div class="numDisplay">
+        <p>advice &num;<span id="number"></span></p>
+      </div>
+      <section class="quoteCtnr" id="quoteCtnr">
+        <p>&ldquo;<span id="advice"></span>&rdquo;</p>
+      </section>
+      <picture>
+        <source media="(min-width: 650px)" srcset="./images/pattern-divider-desktop.svg">
+        <img srcset="./images/pattern-divider-mobile.svg" alt="dividers">
+      </picture>
+      <div class="dice" id="getAdvice">
+        <img src="./images/icon-dice.svg" alt="dice">
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
