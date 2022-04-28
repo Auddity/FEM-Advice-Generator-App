@@ -45,13 +45,18 @@ const displaySearch = async () => {
   const data = await searchAdvice();
   get('spin').style.display = 'none';
   console.log(data);
+  const index = randomEl(data.slips.length);
   if (data.slips) {
-    get('number').textContent = `# ${data.slips[0].id}`
-    get('advice').innerText = `${data.slips[0].advice}`
+    get('number').textContent = `# ${data.slips[index].id}`
+    get('advice').innerText = `${data.slips[index].advice}`
   } else {
     get('number').textContent = `${data.message.type}`
     get('advice').innerText = `${data.message.text}`
   }
+}
+
+const randomEl = arrLength => {
+  return Math.floor(Math.random() * arrLength);
 }
 
 get('form').addEventListener('submit', e => {

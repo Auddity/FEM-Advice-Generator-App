@@ -17,7 +17,7 @@ This my a solution to the [Advice generator app challenge on Frontend Mentor](ht
 - I used Async/Await
 
 ## Extras I Added
-- API offers a search object. So I added a search form which returns the first piece of advice in the returned data. (will switch it random next).
+- API offers a search object which contains an array of slips containing the keyword. So I added a search form where you can enter a keyword and it will return a random bit of advice from the returned array.
 - I Also added a loading animation of the dice element when awaiting data with slower network speeds.
 
 ### Something I Learned

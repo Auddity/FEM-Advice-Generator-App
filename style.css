@@ -94,7 +94,7 @@ body {
   position: relative;
   background-color: var(--darkGrayishBlue);
   width: min(90vmin, 60rem);
-  padding: 2rem 3rem;
+  padding-block: 2rem;
   border-radius: 1.5rem;
 }
 
@@ -109,10 +109,11 @@ body {
 
 .quoteCtnr {
   position: relative;
+  padding: 2rem;
 }
 
 picture img {
-  margin-block: 3rem;
+  margin: 3rem auto;
 }
 
 /* Dice Components */
